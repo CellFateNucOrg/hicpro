@@ -132,18 +132,28 @@ EPS = 0.1
 
 You MIGHT need to change the following variables (the rest are just the default values):
 N_CPU = 
+
 JOB_NAME = 
+
 JOB_MEM =
+
 JOB_WALLTIME = 
+
 JOB_MAIL = 
+
 
 BOWTIE2_IDX_PATH =
 
+
 REFERENCE_GENOME = 
+
 GENOME_SIZE = 
 
+
 GENOME_FRAGMENT = 
+
 LIGATION_SITE = 
+
 
 BIN_SIZE =
 
