@@ -168,4 +168,4 @@ $WORK_DIR/rawdata/sample1/forwardReadsFileForSample1_R1.fastq.gz
 ### Scripts to run
 1. Download and index the genome with **prepareGenome.sh**. The files will be placed in __bowtieIdx/__ folder
 2. Run the HiC-Pro pipeline with **runHicPro.sh**. The files will be placed in __results/__ folder
-3. Convert hic files to cool and mccol with **runHicToCool.sh**. The files will be placed in __higlass__/ folder
+3. Convert hic files to cool and mcool with **runHicToCool.sh**. The files will be placed in __higlass__/ folder
