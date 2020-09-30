@@ -37,4 +37,4 @@ fi
 
 #singularity exec $HICPRO_SIMG ${HICPRO_UTILS}/hicpro2higlass.sh -i ${WORK_DIR}/results/hic_results/matrix/${sampleName}/iced/${res}/${sampleName}_${res}_iced.matrix -r ${res} -c ${WORK_DIR}/bowtieIdx/ce11.chrom.sizes -p $SLURM_CPUS_PER_TASK -o ${WORK_DIR}/higlass
 
-${WORK_DIR}/hicpro2higlass.sh -i ${WORK_DIR}/results/hic_results/matrix/${sampleName}/raw/${res}/${sampleName}_${res}.matrix -r ${res} -c ${WORK_DIR}/bowtieIdx/ce11.chrom.sizes -p $SLURM_CPUS_PER_TASK -n -o ${WORK_DIR}/higlass
+${WORK_DIR}/hicpro2higlass.sh -i ${WORK_DIR}/results/hic_results/matrix/${sampleName}/raw/${res}/${sampleName}_${res}.matrix -r ${res} -c ${GENOME_DIR}/ce11.chrom.sizes -p $SLURM_CPUS_PER_TASK -n -o ${WORK_DIR}/higlass
