@@ -38,6 +38,9 @@ if [[ ! -f "${GENOME_DIR}/ce11.chrom.sizes" ]];  then
   wget http://hgdownload.soe.ucsc.edu/goldenPath/ce11/bigZips/ce11.chrom.sizes
   mv ce11.chrom.sizes $GENOME_DIR/
 fi
+#### NOTE: You should edit the ce11.chrom.sizes to have the chromosomes in the right order, and remove
+#### chrM
+
 
 # get blacklist
 if [[ ! -f "$GENOME_DIR/ce11-blacklist.v2.bed" ]]; then
