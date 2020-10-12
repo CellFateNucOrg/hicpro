@@ -21,7 +21,7 @@ JOB_NAME = hicpro
 JOB_MEM = 8gb
 JOB_WALLTIME = 1:00:00
 JOB_QUEUE = batch
-JOB_MAIL = jennifer.semple@izb.unibe.ch
+JOB_MAIL = 
 
 #########################################################################
 ## Data
@@ -36,7 +36,7 @@ PAIR2_EXT = _R2
 
 MIN_MAPQ = 10
 
-BOWTIE2_IDX_PATH = /home/mdas/20200922_Arima_366b2/hicpro/bowtieIdx 
+BOWTIE2_IDX_PATH = /home/mdas/genomeVer/bowtieIdx 
 BOWTIE2_GLOBAL_OPTIONS = --very-sensitive -L 30 --score-min L,-0.6,-0.2 --end-to-end --reorder
 BOWTIE2_LOCAL_OPTIONS =  --very-sensitive -L 20 --score-min L,-0.6,-0.2 --end-to-end --reorder
 
@@ -45,7 +45,7 @@ BOWTIE2_LOCAL_OPTIONS =  --very-sensitive -L 20 --score-min L,-0.6,-0.2 --end-to
 #######################################################################
 
 REFERENCE_GENOME = ce11
-GENOME_SIZE = /home/mdas/20200922_Arima_366b2/hicpro/bowtieIdx/ce11.chrom.sizes
+GENOME_SIZE = /home/mdas/genomeVer/bowtieIdx/ce11.chrom.sizes
 #######################################################################
 ## Allele specific analysis
 #######################################################################
@@ -63,7 +63,7 @@ REPORT_CAPTURE_REPORTER = 1
 ## Digestion Hi-C
 #######################################################################
 
-GENOME_FRAGMENT = /home/mdas/20200922_Arima_366b2/hicpro/bowtieIdx/ce11.bed
+GENOME_FRAGMENT = /home/mdas/genomeVer/bowtieIdx/ce11.bed
 LIGATION_SITE = GATCGATC,GANTGATC,GANTANTC,GATCANTC
 MIN_FRAG_SIZE = 
 MAX_FRAG_SIZE =
@@ -85,7 +85,7 @@ RM_DUP = 1
 ## Contact Maps
 #######################################################################
 
-BIN_SIZE = 5000 10000
+BIN_SIZE = 5000
 MATRIX_FORMAT = upper
 
 #######################################################################
