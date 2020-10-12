@@ -1,13 +1,13 @@
 #! /bin/bash
 
-#SBATCH --time=0-01:00:00
+#SBATCH --time=0-05:00:00
 ##SBATCH --mail-user=moushumi.das@izb.unibe.ch
 ##SBATCH --mail-type=end,fail
 #SBATCH --job-name="hic2mcool"
 #SBATCH --cpus-per-task=2
 #SBATCH --partition=all
 #SBATCH --mem-per-cpu=8G
-#SBATCH --array=1-4
+#SBATCH --array=1
 ##SBATCH --tmp=64G
 
 
@@ -32,7 +32,7 @@ then
 fi
 
 # copy the utility script from the container to the working directory
-if [[ ! -d "${WORK_DIR}/hicpro2higlass.sh" ]]
+if [[ ! -f "${WORK_DIR}/hicpro2higlass.sh" ]]
 then
   singularity exec $HICPRO_SIMG cp $HICPRO_UTILS/hicpro2higlass.sh ${WORK_DIR}/
 fi

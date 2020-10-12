@@ -1,7 +1,7 @@
 #! /bin/bash
 
-#SBATCH --time=0-01:00:00
-##SBATCH --mail-user=moushumi.das@izb.unibe.ch
+#SBATCH --time=4-00:00:00
+#SBATCH --mail-user=moushumi.das@izb.unibe.ch
 ##SBATCH --mail-type=end,fail
 #SBATCH --job-name="pairHIC"
 #SBATCH --cpus-per-task=8
@@ -23,4 +23,5 @@ export LC_CTYPE="en_US.UTF-8"
 
 echo $WORK_DIR
 singularity exec $HICPRO_SIMG HiC-Pro -i ${INPUT_DIR} -o ${WORK_DIR}/results -c config-hicpro.txt
+
 
