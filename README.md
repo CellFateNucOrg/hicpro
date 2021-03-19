@@ -3,6 +3,7 @@ Scripts to run hicpro on Illumina-HiC data
 
 see documentation here:
 https://github.com/nservant/HiC-Pro
+
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0831-x
 
 ## Installation
