@@ -46,7 +46,7 @@ ${WORK_DIR}/hicpro2higlass.sh -i ${WORK_DIR}/results/hic_results/matrix/${sample
 rm ${WORK_DIR}/cool/${sampleName}_${res}.mcool
 
 echo "making mcools file from cool file..."
-cooler zoomify --balance --balance-args '--convergence-policy store_nan' -n $SLURM_CPUS_PER_TASK -o ${WORK_DIR}/mcool/${sampleName}_${res}_ice.mcool -c 10000000 -r '5000,10000,20000,50000,100000,200000,500000'  ${WORK_DIR}/cool/${sampleName}_${res}.cool
+cooler zoomify --balance --balance-args '--convergence-policy store_nan' -n $SLURM_CPUS_PER_TASK -o ${WORK_DIR}/mcool/${sampleName}_${res}_ice.mcool -c 10000000 -r '2000,4000,10000,20000,50000,100000,200000,500000'  ${WORK_DIR}/cool/${sampleName}_${res}.cool
 
 echo "making raw mcool file from cool file..."
-cooler zoomify -n $SLURM_CPUS_PER_TASK -o ${WORK_DIR}/mcool/${sampleName}_${res}_raw.mcool -c 10000000 -r '5000,10000,20000,50000,100000,200000,500000'  ${WORK_DIR}/cool/${sampleName}_${res}.cool
+cooler zoomify -n $SLURM_CPUS_PER_TASK -o ${WORK_DIR}/mcool/${sampleName}_${res}_raw.mcool -c 10000000 -r '2000,4000,10000,20000,50000,100000,200000,500000'  ${WORK_DIR}/cool/${sampleName}_${res}.cool
