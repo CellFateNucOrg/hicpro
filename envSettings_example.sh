@@ -19,6 +19,6 @@ genomeDigestFile=${GENOME_DIR}/ce11.bed
 
 chromSizesFile=${GENOME_DIR}/ce11.chrom.sizes
 
-res=5000
+res=2000
 
 samples=( 366b2 382b1 775b1 784b1 )
